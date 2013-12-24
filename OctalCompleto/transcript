@@ -1,0 +1,16 @@
+# Reading C:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
+# do {OctalCompleto_tb.fdo} 
+# Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity OctalCompleto_tb
+# -- Compiling architecture behavioral of OctalCompleto_tb
+# ** Error: tb.vhd(12): near ",": expecting ';'
+# ** Error: tb.vhd(37): near ")": expecting IDENTIFIER
+# ** Error: C:/Modeltech_pe_edu_10.2c/win32pe_edu/vcom failed.
+# Error in macro ./OctalCompleto_tb.fdo line 23
+# C:/Modeltech_pe_edu_10.2c/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "tb.vhd""

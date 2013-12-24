@@ -1,0 +1,142 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+
+ENTITY OctalCompleto_tb IS
+END OctalCompleto_tb;
+
+ARCHITECTURE behavioral OF OctalCompleto_tb IS
+
+CONSTANT CLK_PERIOD: time := 20 ns;
+CONSTANT DELAY: time := 0,1*CLK_PERIOD;
+
+--Inputs
+
+SIGNAL NOT_RESET, CLK, LOAD, CIN: std_logic;
+SIGNAL DIN0, DIN1: std_logic_vector(3 DOWNTO 0);
+
+--Outputs
+
+SIGNAL COUT: std_logic;
+SIGNAL DOUT0, DOUT1: std_logic_vector(3 DOWNTO 0);
+
+COMPONENT OctalCompleto
+
+PORT(
+		NOT_RESET : IN std_logic;
+		CLK: IN std_logic;
+		LOAD: IN std_logic;
+		CIN: IN std_logic;
+		DIN0: IN std_logic_vector(3 DOWNTO 0);
+		DIN1: IN std_logic_vector(3 DOWNTO 0);
+		COUT: OUT std_logic;
+		DOUT0: OUT std_logic_vector(3 DOWNTO 0);
+		DOUT1: OUT std_logic_vector(3 DOWNTO 0);
+		
+);
+END COMPONENT;
+
+BEGIN
+
+uut: OctalCompleto 
+
+PORT MAP(
+
+NOT_RESET => ,
+CLK => ,
+LOAD => ,
+CIN => ,
+DIN0 => ,
+DIN1 => ,
+COUT => ,
+DOUT0 => ,
+DOUT1 => 
+
+);
+
+tb: PROCESS
+
+BEGIN
+
+NOT_RESET<='1';
+
+WAIT FOR DELAY;
+
+NOT_RESET<='0';
+
+WAIT FOR DELAY;
+
+ASSERT DOUT0<=(OTHERS=>'0') AND DOUT1<=(OTHERS=>'0');
+REPORT "ERROR EN EL RESET"
+SEVERITY FAILURE;
+
+END PROCESS;
+
+
+PROCESS
+
+BEGIN
+
+LOAD<='0';
+
+WAIT FOR DELAY;
+
+LOAD<='1';
+
+WAIT FOR DELAY;
+
+ASSERT DOUT0<=DIN0 AND DOUT1<=DIN1;
+REPORT "ERROR EN EL LOAD"
+SEVERITY FAILURE;
+
+END PROCESS;
+
+PROCESS
+
+BEGIN
+
+NOT_RESET<='1';
+LOAD<='0';
+
+--PRUEBA CONTAR 
+
+CIN<='1';
+DOUT0<="000";
+CLK<='0';
+
+WAIT FOR DELAY;
+
+CLK<='1';
+
+WAIT FOR DELAY;
+
+ASSERT DOUT0<="001";
+REPORT "Salida incorrecta."
+SEVERITY FAILURE;
+
+--PRUEBA CONTAR CARRY2
+
+DOUT0<="111";
+DOUT1<="000";
+CLK<='0'
+
+WAIT FOR DELAY;
+
+CLK<='1';
+
+WAIT FOR DELAY;
+
+ASSERT DOUT1<="001" AND DOUT0<=000;
+REPORT "Salida incorrecta."
+SEVERITY FAILURE;
+
+
+ASSERT FALSE
+REPORT "OK"
+SEVERITY FAILURE;
+
+
+END PROCESS;
+
+

@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/Users/Javi/Desktop/Trabajo/OctalCompleto
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Eoctalcompleto_tb
+w1387817231
+Z1 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z2 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z4 dC:/Users/Javi/Desktop/Trabajo/OctalCompleto
+8tb.vhd
+Ftb.vhd
+l0
+L6
+VE7@e:Ad>^iP<k4cnbD?IJ1
+!s100 dRozMgGFBYbHG3CkkifNE0
+Z5 OP;C;10.2c;57
+31
+!s110 1387819076
+!i10b 1
+!s108 1387819076.423000
+!s90 -reportprogress|300|-explicit|-93|tb.vhd|
+!s107 tb.vhd|
+o-explicit -93 -O0
+Z6 tExplicit 1
