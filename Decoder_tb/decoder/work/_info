@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/Users/Javi/Documents/GitHub/javisepe_trabajo/Decoder_tb/decoder
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Edecoder_tb
+Z1 w1389492105
+Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z5 dC:/Users/Javi/Documents/GitHub/javisepe_trabajo/Decoder_tb/decoder
+Z6 8decoder_tb.vhd
+Z7 Fdecoder_tb.vhd
+l0
+L5
+Vf<VZog7bD__:MioPLe>Ao1
+!s100 GaMaKP0ifaGHh1fH>Z@bm3
+Z8 OP;C;10.2c;57
+31
+Z9 !s110 1389552823
+!i10b 1
+Z10 !s108 1389552822.730000
+Z11 !s90 -reportprogress|300|-explicit|-93|decoder_tb.vhd|
+Z12 !s107 decoder_tb.vhd|
+Z13 o-explicit -93 -O0
+Z14 tExplicit 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 10 decoder_tb 0 22 f<VZog7bD__:MioPLe>Ao1
+l39
+L8
+V6@XKP]B^PSXhaLmcPahIL3
+!s100 5Pi4GRf@>gbOH4NjhRQR?0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+R13
+R14

@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="OctalCompleto_tb.fdo"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -30,13 +31,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1387889843" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1387889842">
+    <transform xil_pn:end_ts="1389552426" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1389552426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="tb.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1387819003" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7200940910280829390" xil_pn:start_ts="1387819003">
@@ -51,22 +48,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1387889843" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1387889843">
+    <transform xil_pn:end_ts="1389552426" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1389552426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1387889854" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3978382966203562068" xil_pn:start_ts="1387889843">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1389552434" xil_pn:in_ck="4657710982" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3978382966203562068" xil_pn:start_ts="1389552426">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="OctalCompleto_tb.fdo"/>
+      <outfile xil_pn:name="work"/>
     </transform>
   </transforms>
 

@@ -1,6 +1,7 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 ENTITY OctalCompleto_tb IS
@@ -9,7 +10,7 @@ END OctalCompleto_tb;
 ARCHITECTURE behavioral OF OctalCompleto_tb IS
 
 CONSTANT CLK_PERIOD: time := 20 ns;
-CONSTANT DELAY: time := 0,1*CLK_PERIOD;
+CONSTANT DELAY: time := 40 ns;
 
 --Inputs
 
@@ -32,7 +33,7 @@ PORT(
 		DIN1: IN std_logic_vector(3 DOWNTO 0);
 		COUT: OUT std_logic;
 		DOUT0: OUT std_logic_vector(3 DOWNTO 0);
-		DOUT1: OUT std_logic_vector(3 DOWNTO 0);
+		DOUT1: OUT std_logic_vector(3 DOWNTO 0)
 		
 );
 END COMPONENT;
@@ -43,15 +44,15 @@ uut: OctalCompleto
 
 PORT MAP(
 
-NOT_RESET => ,
-CLK => ,
-LOAD => ,
-CIN => ,
-DIN0 => ,
-DIN1 => ,
-COUT => ,
-DOUT0 => ,
-DOUT1 => 
+NOT_RESET => NOT_RESET ,
+CLK => CLK ,
+LOAD => LOAD,
+CIN => CIN,
+DIN0 => DIN0,
+DIN1 => DIN1,
+COUT => COUT,
+DOUT0 => DOUT0,
+DOUT1 => DOUT1
 
 );
 
@@ -67,7 +68,7 @@ NOT_RESET<='0';
 
 WAIT FOR DELAY;
 
-ASSERT DOUT0=(OTHERS=>'0') AND DOUT1=(OTHERS=>'0');
+ASSERT DOUT0="000" AND DOUT1="000";
 REPORT "ERROR EN EL RESET"
 SEVERITY FAILURE;
 
@@ -104,14 +105,15 @@ LOAD<='0';
 DOUT0<=(OTHERS=>'0');
 DOUT1<=(OTHERS=>'0');
 
-CUENTA0<=DOUT0;
-CUENTA1<=DOUT1;
+CUENTA0<=(OTHERS=>'0');
+CUENTA1<=(OTHERS=>'0');
 
 FOR i IN 1 TO 23 LOOP
 
 	IF DOUT0=CUENTA0 AND DOUT0="111" THEN
 
 			CUENTA0<=(OTHERS=>'0');
+			
 			CUENTA1<=CUENTA1+1;
 
 			WAIT UNTIL CLK='1';
@@ -134,6 +136,7 @@ FOR i IN 1 TO 23 LOOP
 			REPORT "ERROR EN LA CUENTA"
 			SEVERITY FAILURE;
 
+END IF;
 END LOOP;
 
  
@@ -144,4 +147,4 @@ SEVERITY FAILURE;
 
 END PROCESS;
 
-
+END BEHAVIORAL;

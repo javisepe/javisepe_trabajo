@@ -21,8 +21,42 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="decoder.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="decoder_tb.fdo"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1389552771" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1389552770">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552771" xil_pn:in_ck="-3926472353656431589" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="decoder_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552771" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1335854991294486271" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552771" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4298210260452771399" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552771" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6934514009101556516" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552771" xil_pn:in_ck="-3926472353656431589" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="decoder_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1389552785" xil_pn:in_ck="-3926472353656431589" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3978382966203562068" xil_pn:start_ts="1389552771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="decoder_tb.fdo"/>
+    </transform>
+  </transforms>
 
 </generated_project>

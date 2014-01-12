@@ -3,29 +3,49 @@ K4
 z2
 13
 cModel Technology
-Z0 dC:/Users/Javi/Desktop/Trabajo/OctalCompleto
+Z0 dC:/Users/Javi/Documents/GitHub/javisepe_trabajo/OctalCompleto
 !s112 0.1
 !i10d 8192
 !i10e 25
 !i10f 100
 Eoctalcompleto_tb
-w1387817231
-Z1 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
-Z2 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
-Z4 dC:/Users/Javi/Desktop/Trabajo/OctalCompleto
-8tb.vhd
-Ftb.vhd
+Z1 w1389552409
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z6 dC:/Users/Javi/Documents/GitHub/javisepe_trabajo/OctalCompleto
+Z7 8tb.vhd
+Z8 Ftb.vhd
 l0
-L6
-VE7@e:Ad>^iP<k4cnbD?IJ1
-!s100 dRozMgGFBYbHG3CkkifNE0
-Z5 OP;C;10.2c;57
+L7
+V4jK<3hWCh1bH3l10AQi4Y1
+!s100 AYkF9VJX_a8LXFIC7NejB3
+Z9 OP;C;10.2c;57
 31
-!s110 1387819076
+Z10 !s110 1389552459
 !i10b 1
-!s108 1387819076.423000
-!s90 -reportprogress|300|-explicit|-93|tb.vhd|
-!s107 tb.vhd|
-o-explicit -93 -O0
-Z6 tExplicit 1
+Z11 !s108 1389552459.695000
+Z12 !s90 -reportprogress|300|-explicit|-93|tb.vhd|
+Z13 !s107 tb.vhd|
+Z14 o-explicit -93 -O0
+Z15 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 16 octalcompleto_tb 0 22 4jK<3hWCh1bH3l10AQi4Y1
+l41
+L10
+VT`4Yl:RMcQbjWABjk23IB3
+!s100 1LT]JikodFA3?dYKSE2J<0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+R14
+R15

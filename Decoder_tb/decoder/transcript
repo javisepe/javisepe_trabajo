@@ -1,0 +1,38 @@
+# Reading C:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
+# do {decoder_tb.fdo} 
+# Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity decoder_tb
+# -- Compiling architecture behavior of decoder_tb
+# //  ModelSim PE Student Edition 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.decoder_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder_tb(behavior)
+# ** Warning: (vsim-3473) Component instance "uut : decoder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_tb File: decoder_tb.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Failure: Salida incorrecta.
+#    Time: 20 ns  Iteration: 0  Process: /decoder_tb/tb File: decoder_tb.vhd
+# Break in ForLoop loop at decoder_tb.vhd line 55
+# Simulation Breakpoint: Break in ForLoop loop at decoder_tb.vhd line 55
+# MACRO ./decoder_tb.fdo PAUSED at line 45
